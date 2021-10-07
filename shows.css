@@ -1,0 +1,176 @@
+body {
+ background-color: black;
+ color: white;
+}
+
+.banner {
+ max-width: 300px;
+ border-radius: 3px;
+ width: 100%;
+}
+
+.banner:hover {
+ transform: scale(1.05);
+}
+
+.main {
+ padding: 2px;
+ border: 0;
+ text-align: center;
+ width: auto;
+ border-bottom: 1px solid gray;
+}
+
+.head {
+ text-align: left;
+}
+
+h1 {
+ font-weight: bold;
+ font-size: 16pt;
+}
+
+.date {
+ font-size: 8pt;
+ display: inline;
+ float: left;
+ margin-left: 5px;
+}
+
+.name {
+ text-align: center;
+ font-size: 12pt;
+ font-variant: small-caps;
+ vertical-align: middle;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ padding: 2px;
+ max-width: 150px;
+ width: auto;
+ display: inline-block;
+}
+
+.rating {
+ font-size: 8pt;
+ display: inline;
+ float: right;
+ margin-right: 5px;
+}
+
+table {
+ width: 100%;
+ border:0;
+}
+
+input {
+  text-decoration: none;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgb(21, 22, 37);
+  padding: 0 8px;
+  height: 30px;
+  color: #FFF;
+  display: inline-block;
+  -webkit-transition: all .1s ease-out;
+  -o-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+}
+
+input:hover {
+  background-color:#4d4a4a;
+}
+
+h1 {
+ font-variant: small-caps;
+ font-size: 10pt;
+}
+
+.checkbox1 {
+ margin-right: 10px;
+ float: right;
+}
+
+table.grid td {
+ max-width: 100px;
+}
+
+td.bk {
+ text-align: center;
+}
+
+tr.br td {
+ background-color: #3b3a30;
+}
+
+.bk a {
+ color: white;
+ text-decoration: none;
+}
+
+.bk a:visited {
+  color: green;
+  text-decoration: none;
+}
+
+.bk a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.submit {
+ float: right;
+ margin-right: 50px;
+}
+
+.poster {
+ max-height: 300px;
+ max-width: 200px;
+ width: 100%;
+ border-radius: 4px;
+}
+
+.poster:hover {
+ transform: scale(1.02);
+}
+
+.poster_unit {
+ max-height: 300px;
+ max-width: 200px;
+ height: 300px;
+ width: 100%;
+ text-align: center;
+ position: relative;
+ background-color: #292929; 
+}
+
+.title_unit {
+ height: 70px;
+ text-align: center;
+ background-color: #292929;
+ position: relative;
+}
+
+.remove_unit {
+ position: absolute;
+ top: 0;
+ right: 5px;
+ transform: scale(1.25);
+ z-index:1000;
+}
+
+.bk_unit {
+ text-align: center;
+ background-color: #292929;
+ font-size: 8pt;
+ position: absolute;
+ bottom: 1px;
+ right: 1px;
+}
+
+.load_unit {
+ height: 10px;
+ text-align: center;
+ background-color: #292929;
+}

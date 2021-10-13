@@ -64,22 +64,7 @@ table {
 }
 
 input {
-  text-decoration: none;
-  outline: none;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgb(21, 22, 37);
-  padding: 0 8px;
-  height: 30px;
-  color: #FFF;
-  display: inline-block;
-  -webkit-transition: all .1s ease-out;
-  -o-transition: all .1s ease-out;
-  transition: all .1s ease-out;
-}
-
-input:hover {
-  background-color:#4d4a4a;
+ width: auto;
 }
 
 h1 {

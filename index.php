@@ -102,8 +102,8 @@ if (!$link) {
    exit;
 }
 
-$ShowIDs = $_POST['id'] ?? [];
-$ShowDelIDs = $_POST['iddel'] ?? [];
+$ShowIDs = $_POST['id'] ?? array();
+$ShowDelIDs = $_POST['iddel'] ?? array();
 $Banners = $_POST['banner'] ?? null;
 
 for( $i = 0; $i < count($ShowIDs); $i++ ) {
@@ -135,9 +135,6 @@ function get_shows() {
 
       $ch = array();
       $mh = curl_multi_init();
-      $total = 100;
-
-      $t1 = microtime(true);
 
       for ( $i=0; $i < 100; $i++ ) {
          $ch[$i] = curl_init();
@@ -154,7 +151,7 @@ function get_shows() {
          //usleep(100);
       } while ($active);
 
-      $content = array();
+      $Pages = array();
 
       $i = 0;
       foreach ($ch AS $i => $c) {

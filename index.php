@@ -267,14 +267,14 @@ function print_premiers() {
 
        <form id="form1" action="index.php" method="post">
         <table>
-<?php   foreach ($Premiers as $Key=>$Value) {
-        	   if($i%4==0) echo '</tr><tr>'; ?>
-        	   <td class="main">
-        	    <div class="date"><?=date('d.m.y',strtotime($Value['premiered']))?></div>
-             <div class='name'><?=$Value['Name']?></div>
-             <div class="rating"><?=$Value['rating']?> <input type="checkbox" class="checkbox1" id="iddel<?=$i?>" name="iddel[]" value="<?=$Value['TVMazeID']?>" title="Remove" /></div>
-             
-            <br/>             
+        <?php   foreach ($Premiers as $Key=>$Value) {
+            if( $i % 4 === 0 ) echo "          </tr>\n          <!-- row #".( ($i / 4) + 1 )." -->\n          <tr>\n"; ?>
+            <td class="main">
+               <div class="flex">
+                  <div class="date"><?=date('d.m.y',strtotime($Value['premiered']))?></div>
+                  <div class='name'><?=$Value['Name']?></div>
+                  <div class="rating"><?=$Value['rating']?> <input type="checkbox" class="checkbox1" id="iddel<?=$i?>" name="iddel[]" value="<?=$Value['TVMazeID']?>" title="Remove" /></div>
+               </div>
 <?php       if($Value['Banner']) { ?>
               <a href="<?=$Value['URL']?>" target="_new">
                 <img class="banner" src="<?=$Value['Banner']?>" title="<?=$Value['Synopsis']?>" />
